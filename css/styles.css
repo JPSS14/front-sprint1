@@ -1,5 +1,82 @@
-body {
-  color: red;
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-areas: "logo" "search" "navigation";
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: auto auto auto;
+  text-transform: uppercase;
+}
+.header__title {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  grid-column: 1/11;
+  grid-row: 1/1;
+  margin: 1rem 0;
+}
+.header__search {
+  grid-area: input;
+  display: flex;
+  justify-content: center;
+  grid-column: 1/11;
+  grid-row: 2/2;
+  width: 90%;
+  margin: 0 auto;
+  border: solid 1px #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.header__search:hover {
+  border-color: #000;
+}
+.header__search:before {
+  content: "";
+  background-image: url("../assets/lupa.svg");
+  background-size: 15px 20px;
+  margin: auto;
+  display: inline-block;
+  width: 15px;
+  height: 20px;
+  font-size: 0.7rem;
+}
+.header__search-input {
+  width: 95%;
+  border: none;
+  font-size: 14px;
+  padding: 10px 0;
+}
+.header__search-input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+.header__menu {
+  grid-area: navigation;
+  display: flex;
+  grid-column: 1/11;
+  width: 90%;
+  margin: 1rem auto;
+}
+.header__menu-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.header__menu-list li a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+}
+
+.app {
+  display: grid;
+  grid-template-areas: "header" "content";
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+}
+.app .content {
+  grid-area: content;
 }
 
 /*# sourceMappingURL=styles.css.map */
