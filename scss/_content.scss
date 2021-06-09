@@ -33,11 +33,22 @@
                 content: " /";
                 color: #777;
               }
+
+              @include for-phone-and-tablet{
+                  display: none;
+              }
             }
 
             &-item:last-child{
               font-weight: 700;
               color: #000;
+
+              @include for-phone-and-tablet{
+                  font-weight: 400;
+                  margin: 0 auto;
+                  font-size: 2rem;
+                  text-transform: uppercase;
+              }
             }
           }
         }
@@ -53,6 +64,10 @@
       padding: 1rem 0;
       text-transform: uppercase;
       font-size: .7rem;
+
+      @include for-phone-and-tablet{
+          display: none;
+      }
       
       &__menu{
         display: flex;
@@ -91,6 +106,13 @@
           flex-wrap: wrap;
           width: 23%;
           margin: 0 5px;
+
+          @include for-tablet-only{
+              width: 30%;
+          }
+          @include for-phone-only{
+              width: 45%;
+          }
         }
 
         .item{
