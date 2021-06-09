@@ -9,6 +9,7 @@
     grid-template-columns: repeat(20, 5%);
     grid-template-rows: auto auto auto;
     text-transform: uppercase;
+    padding: .3rem 0;
 
 
     &__title{
@@ -96,6 +97,10 @@
                 top:60px;
                 width: 400px;
             }
+        }
+
+        .heaeder__search{
+            display: none;
         }
     }
 

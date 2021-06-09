@@ -14,7 +14,7 @@
   @media (min-width: 1200px) { @content; }
 }
 
-@import 'header';
+@import 'header','content';
 
 .app{
   display: grid;
@@ -28,7 +28,10 @@
 
   
 
-  .content{
-    grid-area: content;
+  
+
+  footer{
+    display: none;
   }
+  
 }
