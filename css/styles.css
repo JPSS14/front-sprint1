@@ -2,7 +2,7 @@
   grid-area: header;
   display: grid;
   grid-template-areas: "logo" "search" "navigation";
-  grid-template-columns: repeat(10, 10%);
+  grid-template-columns: repeat(20, 5%);
   grid-template-rows: auto auto auto;
   text-transform: uppercase;
 }
@@ -10,15 +10,28 @@
   grid-area: logo;
   display: flex;
   justify-content: center;
-  grid-column: 1/11;
+  grid-column: 1/21;
   grid-row: 1/1;
   margin: 1rem 0;
+}
+@media (max-width: 1200px) {
+  .header__title-default {
+    display: none;
+  }
+}
+.header__title-mobile {
+  display: flex;
+}
+@media (min-width: 1200px) {
+  .header__title-mobile {
+    display: none;
+  }
 }
 .header__search {
   grid-area: input;
   display: flex;
   justify-content: center;
-  grid-column: 1/11;
+  grid-column: 1/21;
   grid-row: 2/2;
   width: 90%;
   margin: 0 auto;
@@ -52,9 +65,60 @@
 .header__menu {
   grid-area: navigation;
   display: flex;
-  grid-column: 1/11;
+  grid-column: 1/21;
   width: 90%;
   margin: 1rem auto;
+}
+@media (max-width: 1200px) {
+  .header__menu {
+    grid-column: 2/2;
+    grid-row: 1/1;
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .header__menu:hover .header__menu-list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: aquamarine;
+    left: 0;
+    top: 60px;
+    width: 400px;
+  }
+}
+.header__menu img {
+  width: 100px;
+}
+.header__menu-mobile {
+  display: none;
+  width: 100%;
+  max-width: 30px;
+}
+@media (max-width: 1200px) {
+  .header__menu-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.header__menu .mobile__default {
+  display: flex;
+  width: 100%;
+  font-size: 0.5rem;
+  justify-content: center;
+}
+.header__menu .mobile__close {
+  display: none;
+  width: 100%;
+  font-size: 0.5rem;
+  justify-content: center;
+}
+.header__menu .mobile:hover .mobile__close {
+  display: flex;
+}
+.header__menu .mobile:hover .mobile__default {
+  display: none;
 }
 .header__menu-list {
   display: flex;
@@ -62,11 +126,15 @@
   width: 100%;
 }
 .header__menu-list li a {
-  font-family: "Open Sans", sans-serif;
   font-size: 0.8rem;
   text-decoration: none;
   font-weight: 600;
   color: #000;
+}
+@media (max-width: 1200px) {
+  .header__menu-list {
+    display: none;
+  }
 }
 
 .app {
@@ -74,6 +142,7 @@
   grid-template-areas: "header" "content";
   grid-template-columns: auto;
   grid-template-rows: auto auto;
+  font-family: "Open Sans", sans-serif;
 }
 .app .content {
   grid-area: content;
