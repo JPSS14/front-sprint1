@@ -17,7 +17,7 @@ $grey: #ddd;
   @media (min-width: 1200px) { @content; }
 }
 
-@import 'header','content', 'offers-apps', 'contacts-links', 'copyright-complaints';
+@import 'header','content', 'offers-apps', 'contacts-links', 'payment-social-access', 'copyright-complaints';
 
 .app{
   display: grid;
@@ -41,25 +41,7 @@ $grey: #ddd;
     
     
 
-    .payment-social-acessibility{
-      display: flex;
-      margin: 2rem auto;
-      width: 90%;
-      text-transform: uppercase;
-      font-size: .9rem;
-      font-weight: 700;
-
-      .payment{
-        &__title{
-          width: 100%;
-          margin-bottom: 1rem;
-        }
-      }
-
-      .social{
-        display: flex;
-      }
-    }    
+        
   }
   
 }
