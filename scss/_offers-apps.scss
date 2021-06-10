@@ -1,94 +1,100 @@
-.offers{
-  width: 71%;
+.offers-apps{
   display: flex;
-  align-items: center;
-  text-transform: uppercase;
+  width: 90%;
+  margin: 1rem auto;
 
-  &__p{
-    width: 35%;
-    font-size: .8rem;
+  .offers{
+    width: 71%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    &__p{
+      width: 35%;
+      font-size: .8rem;
+    }
+
+    &__form{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 64%;
+
+      &-interests{
+        display: flex;
+        width: 30%;
+        justify-content: space-between;
+        font-size: .9rem;
+        font-style: italic;
+        font-weight: 600;
+        color: $dark-grey;
+        text-transform: initial;
+        border-bottom: solid 1px $dark-grey;
+        padding-bottom: 7px;
+        cursor: pointer;
+        margin-right: 12px;
+
+        &:hover{
+          border-bottom: solid 2px #000;
+        }
+
+        span{
+          transform: rotate(81deg);
+        }
+      }
+
+      &-input{
+        width: 65%;
+        border: none;
+        border-bottom: solid 1px $dark-grey;
+        padding-bottom: 7px;
+        font-size: .9rem;
+
+        &:hover{
+          border-bottom: solid 2px #000;
+        }
+
+        &:focus{
+          box-shadow: 0 0 0 0;
+          outline: 0;
+          border-bottom: solid 2px #000;
+        }
+      }
+
+      &-btn{
+        background: $grey;
+        padding: 6px 10px;
+        border-radius: 5px;
+        outline: 0;
+        border: none;
+        font-size: .8rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-left: 5px;
+        color: $dark-grey;
+
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
   }
 
-  &__form{
+  .mobile__apps{
+    width: 27%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 65%;
+    text-transform: uppercase;
 
-    &-interests{
-      display: flex;
-      width: 30%;
-      justify-content: space-between;
-      font-size: .9rem;
-      font-style: italic;
-      font-weight: 600;
-      color: $dark-grey;
-      text-transform: initial;
-      border-bottom: solid 1px $dark-grey;
-      padding-bottom: 7px;
-      cursor: pointer;
-      margin-right: 12px;
-
-      &:hover{
-        border-bottom: solid 2px #000;
-      }
-
-      span{
-        transform: rotate(81deg);
-      }
-    }
-
-    &-input{
-      width: 65%;
-      border: none;
-      border-bottom: solid 1px $dark-grey;
-      padding-bottom: 7px;
-      font-size: .9rem;
-
-      &:hover{
-        border-bottom: solid 2px #000;
-      }
-
-      &:focus{
-        box-shadow: 0 0 0 0;
-        outline: 0;
-        border-bottom: solid 2px #000;
-      }
-    }
-
-    &-btn{
-      background: $grey;
-      padding: 6px 10px;
-      border-radius: 5px;
-      outline: 0;
-      border: none;
+    &-p{
+      width: 40%;
       font-size: .8rem;
-      text-transform: uppercase;
       font-weight: 600;
-      margin-left: 5px;
-      color: $dark-grey;
-
-      &:hover{
-        cursor: pointer;
-      }
     }
-  }
-}
 
-.mobile__apps{
-  width: 27%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-transform: uppercase;
-
-  &-p{
-    width: 40%;
-    font-size: .8rem;
-    font-weight: 600;
-  }
-
-  &-img{
-    width: 28%;
+    &-img{
+      width: 28%;
+    }
   }
 }

@@ -1,0 +1,20 @@
+.copyright{
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5;
+
+    p{
+      font-size: .7rem;
+    }
+  }
+
+  .complaints{
+    display: flex;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+
+    &__container{
+      width: 200px;
+    }
+  }

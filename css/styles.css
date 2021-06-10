@@ -77,12 +77,18 @@
     width: 100%;
   }
 }
+.header__menu-list .item {
+  padding-bottom: 0.6rem;
+}
+.header__menu-list .item:hover {
+  border-bottom: solid 1px #000;
+}
 @media (max-width: 1200px) {
   .header__menu:hover .header__menu-list {
     display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: aquamarine;
+    background-color: #fff;
     left: 0;
     top: 60px;
     width: 400px;
@@ -278,23 +284,28 @@
   line-height: 3;
 }
 
-.offers {
+.offers-apps {
+  display: flex;
+  width: 90%;
+  margin: 1rem auto;
+}
+.offers-apps .offers {
   width: 71%;
   display: flex;
   align-items: center;
   text-transform: uppercase;
 }
-.offers__p {
+.offers-apps .offers__p {
   width: 35%;
   font-size: 0.8rem;
 }
-.offers__form {
+.offers-apps .offers__form {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 65%;
+  width: 64%;
 }
-.offers__form-interests {
+.offers-apps .offers__form-interests {
   display: flex;
   width: 30%;
   justify-content: space-between;
@@ -308,28 +319,28 @@
   cursor: pointer;
   margin-right: 12px;
 }
-.offers__form-interests:hover {
+.offers-apps .offers__form-interests:hover {
   border-bottom: solid 2px #000;
 }
-.offers__form-interests span {
+.offers-apps .offers__form-interests span {
   transform: rotate(81deg);
 }
-.offers__form-input {
+.offers-apps .offers__form-input {
   width: 65%;
   border: none;
   border-bottom: solid 1px #777;
   padding-bottom: 7px;
   font-size: 0.9rem;
 }
-.offers__form-input:hover {
+.offers-apps .offers__form-input:hover {
   border-bottom: solid 2px #000;
 }
-.offers__form-input:focus {
+.offers-apps .offers__form-input:focus {
   box-shadow: 0 0 0 0;
   outline: 0;
   border-bottom: solid 2px #000;
 }
-.offers__form-btn {
+.offers-apps .offers__form-btn {
   background: #ddd;
   padding: 6px 10px;
   border-radius: 5px;
@@ -341,24 +352,102 @@
   margin-left: 5px;
   color: #777;
 }
-.offers__form-btn:hover {
+.offers-apps .offers__form-btn:hover {
   cursor: pointer;
 }
-
-.mobile__apps {
+.offers-apps .mobile__apps {
   width: 27%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
 }
-.mobile__apps-p {
+.offers-apps .mobile__apps-p {
   width: 40%;
   font-size: 0.8rem;
   font-weight: 600;
 }
-.mobile__apps-img {
+.offers-apps .mobile__apps-img {
   width: 28%;
+}
+
+.contacts-links {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  background: #ddd;
+  padding: 1rem 0;
+}
+.contacts-links .contacts {
+  display: flex;
+  flex-wrap: wrap;
+  width: 20%;
+  padding-right: 2rem;
+  border-right: solid 1px #777;
+}
+.contacts-links .contacts__card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+  padding: 40px 0;
+}
+.contacts-links .contacts__card-container {
+  width: 25%;
+}
+.contacts-links .contacts__card-container img {
+  width: 100%;
+}
+.contacts-links .contacts__card-p {
+  width: 100%;
+  text-align: center;
+}
+.contacts-links .links {
+  display: flex;
+  width: 68%;
+}
+.contacts-links .links__menu {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+.contacts-links .links__menu-li {
+  width: 23%;
+}
+.contacts-links .links__menu-li .list__title {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.contacts-links .links__menu-li .list__ul-item {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+.contacts-links .links__menu-li .list__ul-item a {
+  color: #000;
+  text-decoration: none;
+}
+
+.copyright {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+.copyright p {
+  font-size: 0.7rem;
+}
+
+.complaints {
+  display: flex;
+  width: 10%;
+  justify-content: center;
+  align-items: center;
+}
+.complaints__container {
+  width: 200px;
 }
 
 .app {
@@ -372,8 +461,22 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 90%;
   margin: 2rem auto;
+}
+.app .footer .payment-social-acessibility {
+  display: flex;
+  margin: 2rem auto;
+  width: 90%;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.app .footer .payment-social-acessibility .payment__title {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.app .footer .payment-social-acessibility .social {
+  display: flex;
 }
 
 /*# sourceMappingURL=styles.css.map */

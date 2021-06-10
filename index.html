@@ -39,18 +39,18 @@
         <p class="mobile__close">Fechar</p>
       </div>
       <ul class="header__menu-list">
-        <li><a href="#">Novidades</a></li>
-        <li><a href="#">Feminimo</a></li>
-        <li><a href="#">Masculino</a></li>
-        <li><a href="#">Infantil</a></li>
-        <li><a href="#">Moda Íntima</a></li>
-        <li><a href="#">Calçados</a></li>
-        <li><a href="#">Acessórios e Relógios</a></li>
-        <li><a href="#">Beleza e Perfume</a></li>
-        <li><a href="#">Casa Riachuelo</a></li>
-        <li><a href="#">Eletrônicos</a></li>
-        <li><a href="#">Personagens</a></li>
-        <li><a href="#">Outlet</a></li>
+        <li class="item"><a href="#">Novidades</a></li>
+        <li class="item"><a href="#">Feminimo</a></li>
+        <li class="item"><a href="#">Masculino</a></li>
+        <li class="item"><a href="#">Infantil</a></li>
+        <li class="item"><a href="#">Moda Íntima</a></li>
+        <li class="item"><a href="#">Calçados</a></li>
+        <li class="item"><a href="#">Acessórios e Relógios</a></li>
+        <li class="item"><a href="#">Beleza e Perfume</a></li>
+        <li class="item"><a href="#">Casa Riachuelo</a></li>
+        <li class="item"><a href="#">Eletrônicos</a></li>
+        <li class="item"><a href="#">Personagens</a></li>
+        <li class="item"><a href="#">Outlet</a></li>
       </ul>
     </nav>
   </header>
@@ -214,155 +214,180 @@
   </main>
 
   <footer class="footer">
-    <div class="offers">
-      <p class="offers__p">Receba ofertas e novidades por e-mail</p>
-      <form class="offers__form" action="/">
-        <div class="offers__form-interests">
-          <p>Interesses</p>
-          <span>ᐅ</span>
+
+    <div class="offers-apps">
+      <div class="offers">
+        <p class="offers__p">Receba ofertas e novidades por e-mail</p>
+        <form class="offers__form" action="/">
+          <div class="offers__form-interests">
+            <p>Interesses</p>
+            <span>ᐅ</span>
+          </div>
+          <input class="offers__form-input" type="email" placeholder="Digite aqui seu e-mail" />
+          <span>@</span>
+          <button class="offers__form-btn" type="submit">Cadastrar</button>
+        </form>
+      </div>
+
+      <div class="mobile__apps">
+        <p class="mobile__apps-p">Baixe nosso App</p>
+        <img class="mobile__apps-img" src="assets/google-play.webp" alt="Google Play" />
+        <img class="mobile__apps-img" src="assets/app-store.webp" alt="App Store" />
+      </div>
+    </div>
+
+    <div class="contacts-links">
+      <div class="contacts">
+        <div class="contacts__card">
+          <div class="contacts__card-container">
+            <img width="50px" src="assets/ico-attendance.svg" alt="Atendimento" />
+          </div>
+          <p class="contacts__card-p">Atendimento</p>
         </div>
-        <input class="offers__form-input" type="email" placeholder="Digite aqui seu e-mail" />
-        <span>@</span>
-        <button class="offers__form-btn" type="submit">Cadastrar</button>
-      </form>
+        <div class="contacts__card">
+          <div class="contacts__card-container">
+            <img width="50px" src="assets/ico-faq.svg" alt="Perguntas Frequentes" />
+          </div>
+          <p class="contacts__card-p">Perguntas Frequentes</p>
+        </div>
+        <div class="contacts__card">
+          <div class="contacts__card-container">
+            <img width="50px" src="assets/ico-invoice-and-statement.svg" alt="Fatura e Extrato" />
+          </div>
+          <p class="contacts__card-p">Fatura <br />e Extrato</p>
+        </div>
+        <div class="contacts__card">
+          <div class="contacts__card-container">
+            <img width="50px" src="assets/ico-work-with-us.svg" alt="Trabalhe Conosco" />
+          </div>
+          <p class="contacts__card-p">Trabalhe Conosco</p>
+        </div>
+      </div>
+
+      <div class="links">
+        <ul class="links__menu">
+          <li class="links__menu-li">
+            <div class="list">
+              <h3 class="list__title">Cartão Riachuelo</h3>
+              <ul class="list__ul">
+                <li class="list__ul-item"><a href="#">Midway Financeira</a></li>
+                <li class="list__ul-item"><a href="#">Saiba como adquirir</a></li>
+                <li class="list__ul-item"><a href="#">Veja sua fatura e extrato</a></li>
+                <li class="list__ul-item"><a href="#">Buscando quitar suas dívidas?</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="links__menu-li">
+            <div class="list">
+              <h3 class="list__title">Sobre a Riachuelo</h3>
+              <ul class="list__ul">
+                <li class="list__ul-item"><a href="#">A Empresa</a></li>
+                <li class="list__ul-item"><a href="#">Portal de Fornecedores</a></li>
+                <li class="list__ul-item"><a href="#">Relação com Investidores</a></li>
+                <li class="list__ul-item"><a href="#">Assessoria de Imprensa</a></li>
+                <li class="list__ul-item"><a href="#">Trabalhe Conosco</a></li>
+                <li class="list__ul-item"><a href="#">Programa Jovem Aprendiz</a></li>
+                <li class="list__ul-item"><a href="#">Cadastro de Startups</a></li>
+                <li class="list__ul-item"><a href="#">Mapa do Site</a></li>
+                <li class="list__ul-item"><a href="#">Guide Shop</a></li>
+                <li class="list__ul-item"><a href="#">Venda na Riachuelo Marketplace</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="links__menu-li">
+            <div class="list">
+              <h3 class="list__title">Moda que Transforma</h3>
+              <ul class="list__ul">
+                <li class="list__ul-item"><a href="#">Na prática</a></li>
+                <li class="list__ul-item"><a href="#">Entre Costuras</a></li>
+                <li class="list__ul-item"><a href="#">Jeans Mais Transparente</a></li>
+                <li class="list__ul-item"><a href="#">Ações Covid-19</a></li>
+                <li class="list__ul-item"><a href="#">Free Free</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="links__menu-li">
+            <div class="list">
+              <h3 class="list__title">Ajuda</h3>
+              <ul class="list__ul">
+                <li class="list__ul-item"><a href="#">Atendimento</a></li>
+                <li class="list__ul-item"><a href="#">Perguntas Frequentes</a></li>
+                <li class="list__ul-item"><a href="#">Trocas e Devoluções</a></li>
+                <li class="list__ul-item"><a href="#">Portal da Privacidade</a></li>
+                <li class="list__ul-item"><a href="#">Política de Privacidade</a></li>
+                <li class="list__ul-item"><a href="#">Termos e Condições de Uso</a></li>
+                <li class="list__ul-item"><a href="#">Regras e Resultados de Sorteios</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="mobile__apps">
-      <p class="mobile__apps-p">Baixe nosso App</p>
-      <img class="mobile__apps-img" src="assets/google-play.webp" alt="Google Play" />
-      <img class="mobile__apps-img" src="assets/app-store.webp" alt="App Store" />
-    </div>
+    <div class="payment-social-acessibility">
+      <div class="payment">
+        <h3 class="payment__title">Formas de Pagamento</h3>
+        <img src="assets/ico-cartao-rchlo1.webp" alt="" />
+        <img src="assets/ico-cartao-rchlo2.webp" alt="" />
+        <img src="assets/ico-cartao-rchlo3.webp" alt="" />
+        <img src="assets/ico-cartao-visa.png" alt="" />
+        <img src="assets/ico-cartao-master.webp" alt="" />
+        <img src="assets/ico-cartao-amex.webp" alt="" />
+        <img src="assets/ico-cartao-diners.png" alt="" />
+        <img src="assets/ico-cartao-elo.png" alt="" />
+        <img src="assets/ico-boleto.webp" alt="" />
+        <img src="assets/ico-paypal.png" alt="" />
+      </div>
 
-    <div class="contacts">
-      <div>
-        <img width="50px" src="assets/ico-attendance.svg" alt="Atendimento" />
-        <p>Atendimento</p>
+      <div class="social">
+        <h3>Siga a Riachuelo</h3>
+        <img src="assets/ico-facebook.svg" alt="" />
+        <img src="assets/ico-instagram.svg" alt="" />
+        <p>RCHLO</p>
+        <img src="assets/ico-instagram.svg" alt="" />
+        <p>CASA RCHLO</p>
+        <img src="assets/ico-pinterest.svg" alt="" />
+        <img src="assets/ico-twitter.svg" alt="" />
+        <img src="assets/ico-youtube.svg" alt="" />
+        <img src="assets/ico-linkedin.svg" alt="" />
       </div>
-      <div>
-        <img width="50px" src="assets/ico-faq.svg" alt="Perguntas Frequentes" />
-        <p>Perguntas Frequentes</p>
+
+      <div class="accessibility">
+        <h3>Acessibilidade</h3>
+        <img src="assets/ico-a11y.webp" alt="" />
       </div>
-      <div>
-        <img width="50px" src="assets/ico-invoice-and-statement.svg" alt="Fatura e Extrato" />
-        <p>Fatura e Extrato</p>
-      </div>
-      <div>
-        <img width="50px" src="assets/ico-work-with-us.svg" alt="Trabalhe Conosco" />
-        <p>Trabalhe Conosco</p>
-      </div>
-    </div>
-    <div class="links">
-      <ul>
-        <li>
-          <div>
-            <h3>Cartão Riachuelo</h3>
-            <ul>
-              <li><a href="">Midway Financeira</a></li>
-              <li><a href="">Saiba como adquirir</a></li>
-              <li><a href="">Veja sua fatura e extrato</a></li>
-              <li><a href="">Buscando quitar suas dívidas?</a></li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <div>
-            <h3>Sobre a Riachuelo</h3>
-            <ul>
-              <li><a href="">A Empresa</a></li>
-              <li><a href="">Portal de Fornecedores</a></li>
-              <li><a href="">Relação com Investidores</a></li>
-              <li><a href="">Assessoria de Imprensa</a></li>
-              <li><a href="">Trabalhe Conosco</a></li>
-              <li><a href="">Programa Jovem Aprendiz</a></li>
-              <li><a href="">Cadastro de Startups</a></li>
-              <li><a href="">Mapa do Site</a></li>
-              <li><a href="">Guide Shop</a></li>
-              <li><a href="">Venda na Riachuelo Marketplace</a></li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <div>
-            <h3>Moda que Transforma</h3>
-            <ul>
-              <li><a href="">Na prática</a></li>
-              <li><a href="">Entre Costuras</a></li>
-              <li><a href="">Jeans Mais Transparente</a></li>
-              <li><a href="">Ações Covid-19</a></li>
-              <li><a href="">Free Free</a></li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <div>
-            <h3>Ajuda</h3>
-            <ul>
-              <li><a href="">Atendimento</a></li>
-              <li><a href="">Perguntas Frequentes</a></li>
-              <li><a href="">Trocas e Devoluções</a></li>
-              <li><a href="">Portal da Privacidade</a></li>
-              <li><a href="">Política de Privacidade</a></li>
-              <li><a href="">Termos e Condições de Uso</a></li>
-              <li><a href="">Regras e Resultados de Sorteios</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="payment">
-      <h3>Formas de Pagamento</h3>
-      <img src="assets/ico-cartao-rchlo1.webp" alt="" />
-      <img src="assets/ico-cartao-rchlo2.webp" alt="" />
-      <img src="assets/ico-cartao-rchlo3.webp" alt="" />
-      <img src="assets/ico-cartao-visa.png" alt="" />
-      <img src="assets/ico-cartao-master.webp" alt="" />
-      <img src="assets/ico-cartao-amex.webp" alt="" />
-      <img src="assets/ico-cartao-diners.png" alt="" />
-      <img src="assets/ico-cartao-elo.png" alt="" />
-      <img src="assets/ico-boleto.webp" alt="" />
-      <img src="assets/ico-paypal.png" alt="" />
-    </div>
-    <div class="social">
-      <h3>Siga a Riachuelo</h3>
-      <img src="assets/ico-facebook.svg" alt="" />
-      <img src="assets/ico-instagram.svg" alt="" />
-      <p>RCHLO</p>
-      <img src="assets/ico-instagram.svg" alt="" />
-      <p>CASA RCHLO</p>
-      <img src="assets/ico-pinterest.svg" alt="" />
-      <img src="assets/ico-twitter.svg" alt="" />
-      <img src="assets/ico-youtube.svg" alt="" />
-      <img src="assets/ico-linkedin.svg" alt="" />
-    </div>
-    <div class="accessibility">
-      <h3>Acessibilidade</h3>
-      <img src="assets/ico-a11y.webp" alt="" />
     </div>
     <div class="copyright">
-      <p>
+      <p class="copyright__p">
         © Copyright 2017 - 2019. Todos os direitos reservados. Lojas Riachuelo
-        S/A. Rua Landri Sales, 1.070, G02 Anexo B, Guarulhos - SP - Brasil CEP
-        07250-130 CNPJ 33.200.056/0441-97 | IE 796.420.926.112 | SAC
+        S/A. Rua Landri Sales, 1.070, G02 Anexo B, Guarulhos - SP - Brasil
+      </p>
+      <p>CEP 07250-130 CNPJ 33.200.056/0441-97 | IE 796.420.926.112 | SAC
         4003-0515.Direção de fotografia de produtos por Adriano Adrião.
-        Pagamento com Cartão Riachuelo, parcelas mínimas de R$ 15,00. Para os
-        demais cartões Visa, Mastercard, Elo, Diners, Hipercard e American
-        Express, parcelas mínimas de R$ 30,00. * COMPRE NO SITE e RETIRE NA
-        LOJA com FRETE GRÁTIS, conforme lojas participantes. Consulte as lojas
-        participantes nas opções de frete do seu pedido, conforme CEP de
-        entrega cadastrado. Frete único de R$ 4,99 para Sul e Sudeste em
-        compras a partir de R$ 129,00. Demais regiões o valor estará sujeito a
-        variações. Condição por tempo indeterminado, para tipo de entrega
-        “normal”. Preços, promoções, condições de pagamento, valores de frete
-        e disponibilidade de estoque são aplicados somente nas compras
-        efetuadas na loja online Riachuelo. Existe uma limitação de peças
-        iguais no mesmo pedido que muda de acordo com o tipo de produto. Em
-        caso de divergência de valores entre a página do produto e a Sacola de
-        Compras, a Riachuelo se reserva a garantir o valor exibido na Sacola
-        de Compras.
+      </p>
+      <p>Pagamento com Cartão Riachuelo, parcelas mínimas de R$ 15,00. Para os
+      demais cartões Visa, Mastercard, Elo, Diners, Hipercard e American
+      Express, parcelas mínimas de R$ 30,00.</p> 
+      <p>* COMPRE NO SITE e RETIRE NA
+      LOJA com FRETE GRÁTIS, conforme lojas participantes. Consulte as lojas
+      participantes nas opções de frete do seu pedido, conforme CEP de
+      entrega cadastrado.</p> <p>Frete único de R$ 4,99 para Sul e Sudeste em
+      compras a partir de R$ 129,00. Demais regiões o valor estará sujeito a
+      variações. Condição por tempo indeterminado, para tipo de entrega
+      “normal”.</p> 
+      <p>Preços, promoções, condições de pagamento, valores de frete
+      e disponibilidade de estoque são aplicados somente nas compras
+      efetuadas na loja online Riachuelo. Existe uma limitação de peças
+      iguais no mesmo pedido que muda de acordo com o tipo de produto.</p> <p>Em
+      caso de divergência de valores entre a página do produto e a Sacola de
+      Compras, a Riachuelo se reserva a garantir o valor exibido na Sacola
+      de Compras.</p>
       </p>
     </div>
     <div class="complaints">
-      <img src="assets/ra1000.webp" alt="" />
+      <div class="complaints__container">
+        <img src="assets/ra1000.webp" alt="" />
+      </div>
     </div>
   </footer>
 </body>

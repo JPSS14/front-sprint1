@@ -86,22 +86,31 @@
           width: 100%;
       }
 
+      &-list{
+        .item{
+          padding-bottom: .6rem;
+          &:hover{
+            border-bottom: solid 1px #000;
+          } 
+        }
+      }
+
       &:hover{
         .header__menu-list{
             @include for-phone-and-tablet{
                 display: flex;
                 flex-direction: column;
                 position: absolute;
-                background-color: aquamarine;
+                background-color: #fff;
                 left: 0;
                 top:60px;
                 width: 400px;
             }
         }
-
         .heaeder__search{
             display: none;
-        }
+      }
+
     }
 
       img{
