@@ -3,13 +3,14 @@
     grid-column: 1 / 1;
     grid-row: 2 / 2;
     width: 100%;
+    border-bottom: solid 3px $grey;
 
     .breadcrumbs{
       display: flex;
       justify-content: center;
       width: 100%;
       padding: 1rem 0;
-      border-top: solid 1px #ddd;
+      border-top: solid 1px $grey;
 
       .breadcrumbs__menu{
         width: 81%;
@@ -21,7 +22,7 @@
             font-size: 0.85rem;
 
             a{
-              color: #777;
+              color: $dark-grey;
               text-decoration: none;
               margin: 0 5px;
 
@@ -31,7 +32,7 @@
 
               &:after{
                 content: " /";
-                color: #777;
+                color: $dark-grey;
               }
 
               @include for-phone-and-tablet{
@@ -59,8 +60,8 @@
       display: flex;
       width: 81%;
       margin: 0 auto;
-      border-top: solid 1px #ddd;
-      border-bottom: solid 1px #ddd;
+      border-top: solid 1px $grey;
+      border-bottom: solid 1px $grey;
       padding: 1rem 0;
       text-transform: uppercase;
       font-size: .7rem;
