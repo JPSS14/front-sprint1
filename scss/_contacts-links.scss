@@ -12,6 +12,12 @@
       width: 20%;
       padding-right: 2rem;
       border-right: solid 1px $dark-grey;
+      @include for-phone-and-tablet{
+        width: 100%;
+        padding: 0;
+        border: none;
+        justify-content: center;
+      }
 
       &__card{
         display: flex;
@@ -19,6 +25,9 @@
         justify-content: center;
         width: 50%;
         padding: 40px 0;
+        @include for-phone-and-tablet{
+          width: 23%;
+        }
 
         &-container{
           width: 25%;
@@ -41,12 +50,21 @@
 
       &__menu{
         display: flex;
+        flex-wrap: wrap;
         width: 100%;
         justify-content: flex-end;
         margin-top: 2rem;
 
         &-li{
           width: 23%;
+
+          @include for-tablet-only{
+            width: 45%;
+          }
+          @include for-phone-only{
+            width: 100%;
+            text-align: center;
+          }
           .list{
             &__title{
               font-size: .9rem;
